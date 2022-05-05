@@ -4,6 +4,9 @@ import moviepy as mp
 
 class Speech_Extractor:
 
+    def __init__(self) -> None:
+        pass
+
     def convert(filename):
         clip = mp.VideoFileClip(filename)
         clip.audio.write_audiofile(r""+filename+"_audio.wav")
